@@ -1,7 +1,7 @@
 import './App.css';
 import logo from './logo.svg';
+import { heading } from './components/heading';
 
-const heading = <h1 className='site-heading'>Hello, React</h1>
 
 function App() {
   return (

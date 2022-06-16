@@ -1,0 +1,1 @@
+export const heading = <h1 className='site-heading'>Hello, React</h1>;
