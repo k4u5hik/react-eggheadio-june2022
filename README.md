@@ -3,6 +3,7 @@
 Learning react by reading the documentation and following the tutorials on the respective topic on [egghead.io](https://egghead.io/lessons/react-a-beginners-guide-to-react-introduction)
 
 [React documentation](https://reactjs.org/docs/getting-started.html)
+[React Router](https://reactrouter.com/docs/en/v6/getting-started/overview)
 
 ## Javascript complier
 
