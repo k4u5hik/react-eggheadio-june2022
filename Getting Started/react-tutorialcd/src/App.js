@@ -1,6 +1,6 @@
 import './App.css';
 import logo from './logo.svg';
-import { element, heading } from './components/heading';
+import { element1, getGreeting, heading } from './components/heading';
 
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
           Learn React
         </a>
         {heading}
-        {element}
+        {getGreeting( { firstName: 'Kaushik', lastName: 'Chemburkar' } )}
       </header>
     </div>
   );
