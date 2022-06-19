@@ -19,7 +19,8 @@
       lastName: PropTypes.string.isRequired,
     }
 
-    const element = <SayHello firstName={false} />
+    const element = <SayHello firstName={false} lastName={"Chemburkar"} />
+    // Does not display firstName because the propTypes do not match, when the propTypes match, firstName is displayed.
 
     ReactDOM.render(element, rootElement)
   </script>
