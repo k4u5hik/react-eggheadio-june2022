@@ -1,10 +1,10 @@
 ---
 id: 3t5gytv847ldpphrcti0cbm
-title: '2022-06-24'
+title: '06'
 desc: ''
-updated: 1656066132549
+updated: 1656067253110
 created: 1656057161636
 ---
-## Using lazy initializer with useState
+## June 2022 - Kent C Dodds React Tutorials
 
-In review, the problem that we're solving here is that reading into localStorage is not necessary, except for the initial render of our component. We turn our initial value argument here into a function so that React will call it only when it's necessary to get that initial value, which is only on the first render.
+Getting to understand the mechanics better.
