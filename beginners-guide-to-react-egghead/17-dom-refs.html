@@ -43,7 +43,7 @@
     }
   </style>
   <script type="text/babel">
-    function Tilt({children}) {
+    function Tilt ({ children }) {
       const tiltRef = React.useRef()
 
       React.useEffect(() => {
@@ -52,28 +52,28 @@
           max: 25,
           speed: 400,
           glare: true,
-          'max-glare': 0.5,
+          'max-glare': 0.5
         }
         VanillaTilt.init(tiltNode, vanillaTiltOptions)
         return () => {
-          tiltNode.vanillaTilt.destroy()
+          tiltNode.vanillaTilt.destroy() //Garbage collection
         }
       }, [])
 
       return (
-        <div ref={tiltRef} className="tilt-root">
-          <div className="tilt-child">{children}</div>
+        <div ref={tiltRef} className='tilt-root'>
+          <div className='tilt-child'>{children}</div>
         </div>
       )
     }
 
-    function App() {
+    function App () {
       const [showTilt, setShowTilt] = React.useState(true)
       return (
         <div>
           <label>
             <input
-              type="checkbox"
+              type='checkbox'
               checked={showTilt}
               onChange={e => setShowTilt(e.target.checked)}
             />{' '}
@@ -81,7 +81,7 @@
           </label>
           {showTilt ? (
             <Tilt>
-              <div className="totally-centered">vanilla-tilt.js</div>
+              <div className='totally-centered'>vanilla-tilt.js</div>
             </Tilt>
           ) : null}
         </div>
